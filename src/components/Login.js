@@ -153,7 +153,7 @@ const Login = () => {
       justifyContent="space-between"
       minHeight="100vh"
     >
-      <Header hasHiddenAuthButtons />
+      <Header hasHiddenAuthButtons={true} />
       <Box className="content">
         <Stack spacing={2} className="form">
         <h2 className="title">Login</h2>
@@ -187,7 +187,7 @@ const Login = () => {
            </div>
            <p className="secondary-action">
             Already have an account?{" "}
-             <Link to="/register" className="link">
+             <Link to="/products" className="link">
               Register now
              </Link>
           </p>

@@ -26,9 +26,9 @@ function App() {
               <Login />
             </Route>
 
-            {/* <Route path="/">
+            <Route path="/">
               <Products />
-            </Route> */}
+            </Route>
 
           </ThemeProvider>
           </Switch>
