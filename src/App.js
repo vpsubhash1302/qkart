@@ -5,6 +5,8 @@ import Products from "./components/Products";
 import theme from "./theme";
 import {Route,Switch,Link} from "react-router-dom";
 import {ThemeProvider} from "@emotion/react";
+import Checkout from "./components/Checkout";
+import Thanks from "./components/Thanks";
 
 
 
@@ -22,14 +24,24 @@ function App() {
               <Register />
             </Route>
 
-            <Route path="/login">
+            <Route exact path="/login">
               <Login />
             </Route>
 
-            <Route path="/">
+            <Route exact path="/checkout">
+              <Checkout />
+            </Route>
+
+            <Route exact path="/thanks">
+              <Thanks />
+            </Route>
+
+
+            <Route exact path="/">
               <Products />
             </Route>
 
+            
           </ThemeProvider>
           </Switch>
 
